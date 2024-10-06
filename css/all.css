@@ -1,0 +1,13 @@
+* {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+
+    [data-aos="fade-right"],
+    [data-aos="fade-left"] {
+        transform: translateX(0) !important;
+        overflow: hidden;
+    }
+}
