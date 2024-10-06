@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel Toluka</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="img/toluka.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body onload="loadArticle()" class="text-[#ffb53e] min-h-screen">
+
+    <header class="shadow border-b-[1px]">
+        <div class="max-w-screen-xl mx-auto flex justify-between items-center py-2 px-2 lg:px-14 lg:py-3">
+            <a href="#" class="flex justify-evenly">
+                <img src="/img/toluka.svg" alt="" class="w-[60px] lg:w-[50px] mx-1 my-auto">
+                <h2 class="font-bold text-2xl lg:text-3xl my-auto logo-text tracking-wider uppercase lg:inline hidden">
+                    Toluka
+                </h2>
+            </a>
+            <nav id="navbar-default" class="hidden md:flex md:space-x-6">
+                <a href="index.html" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Beranda</a>
+                <a href="index.html#about-us" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Tentang
+                    Kami</a>
+                <a href="index.html#produk" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Produk
+                    Toluka</a>
+                <a href="index.html#event" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Event</a>
+                <a href="index.html#our-team" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Tim Kami</a>
+                <a href="index.html#our-contact" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Kontak
+                    Kami</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section class="mx-auto py-20 px-5 max-w-screen-lg">
+        <h1 id="article-title" class="text-3xl font-bold text-slate-800 mb-5">Judul Artikel</h1>
+        <img id="article-image" src="https://via.placeholder.com/1280x720" alt="Artikel" class="w-full mb-5 rounded-lg">
+        <p id="article-description" class="text-lg text-slate-700 leading-relaxed">
+            Deskripsi lengkap tentang artikel akan muncul di sini.
+        </p>
+    </section>
+
+</body>
+
+</html>
