@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artikel Toluka</title>
+    <title>Toluka - Artikel</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/index.css">
@@ -14,8 +14,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body onload="loadArticle()" class="text-[#ffb53e] min-h-screen">
-
+<body class="text-[#ffb53e] min-h-screen">
+    <!-- Navbar -->
     <header class="shadow border-b-[1px]">
         <div class="max-w-screen-xl mx-auto flex justify-between items-center py-2 px-2 lg:px-14 lg:py-3">
             <a href="#" class="flex justify-evenly">
@@ -24,22 +24,51 @@
                     Toluka
                 </h2>
             </a>
+            <button id="navbar-toggle"
+                class="inline-flex items-center p-2 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" view="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
             <nav id="navbar-default" class="hidden md:flex md:space-x-6">
-                <a href="index.html" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Beranda</a>
-                <a href="index.html#about-us" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Tentang
+                <a href="#" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Beranda</a>
+                <a href="#about-us" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Tentang
                     Kami</a>
-                <a href="index.html#produk" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Produk
+                <a href="#produk" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Produk
                     Toluka</a>
-                <a href="index.html#event" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Event</a>
-                <a href="index.html#our-team" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Tim Kami</a>
-                <a href="index.html#our-contact" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Kontak
+                <a href="#event" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Event</a>
+                <a href="#our-team" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Tim Kami</a>
+                <a href="#our-contact" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Kontak
                     Kami</a>
+                <a href="login.html"
+                    class="px-8 py-2 rounded-full bg-[#ffb53e] text-white hover:bg-[#e4a642] transition loginBtn">Login</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <nav class="flex flex-col space-y-4 px-5 m-auto max-w-full mb-5 w-full">
+                <a href="index.html#" class="px-4 py-2 text-slate-700 rounded-lg transition hover:bg-gray-300">Beranda</a>
+                <a href="index.html#about-us" class="px-4 py-2 text-slate-700 rounded-lg transition hover:bg-gray-300">Tentang
+                    Kami</a>
+                <a href="index.html#produk" class="px-4 py-2 text-slate-700 rounded-lg transition hover:bg-gray-300">Produk
+                    Toluka</a>
+                <a href="index.html#event" class="px-4 py-2 text-slate-700 rounded-lg transition hover:bg-gray-300">Event</a>
+                <a href="index.html#our-team" class="px-4 py-2 text-slate-700 rounded-lg transition hover:bg-gray-300">Tim
+                    Kami</a>
+                <a href="index.html#our-contact" class="px-4 py-2 text-slate-700 rounded-lg transition hover:bg-gray-300">Kontak
+                    Kami</a>
+                <a href="login.html"
+                    class="px-8 max-w-full py-2 m-auto rounded-full bg-[#ffb53e] text-white hover:bg-[#e4a642] transition loginBtn">Login</a>
             </nav>
         </div>
     </header>
 
     <!-- Article Section -->
-    <section class="mx-auto py-20 px-5 max-w-screen-lg">
+    <section class="mx-auto py-20 px-5 max-w-screen-lg" data-aos="fade" data-aos-duration="1000">
         <h1 id="article-title" class="text-3xl font-bold text-slate-800 mb-5">Judul Artikel</h1>
         <img id="article-image" src="https://via.placeholder.com/1280x720" alt="Artikel" class="w-full mb-5 rounded-lg">
         <p id="article-description" class="text-lg text-slate-700 leading-relaxed">
@@ -47,6 +76,19 @@
         </p>
     </section>
 
+    <script>
+        var navbarToggle = document.getElementById('navbar-toggle');
+        var mobileMenu = document.getElementById('mobile-menu');
+
+        navbarToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        AOS.init({
+            once: true
+        });
+    </script>
 </body>
 
 </html>
