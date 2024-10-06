@@ -81,9 +81,9 @@ CREATE TABLE `galeri` (
 --
 
 INSERT INTO `galeri` (`id_galeri`, `nama_galeri`, `gambar`) VALUES
-(2, 'Upacara', 'smp4.jpg'),
-(3, 'Lab Komputer', 'smp2.jpg'),
-(4, 'UNBK', 'smp3.jpg');
+(1, 'computer', 'comp.jpg'),
+(2, 'motherboard', 'mb.jpg'),
+(3, 'so rusak', 'huh.jpg');
 
 -- --------------------------------------------------------
 
