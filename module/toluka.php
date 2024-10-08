@@ -48,6 +48,29 @@
         <?php } ?>
     </section>
 
+    <!-- Apa itu Karawo Sections -->
+    <section id="apa" class="mx-auto py-20 bg-white w-full text-center lg:text-left p-5 border-b-[1px]">
+        <div class="max-w-screen-lg mx-auto flex flex-col lg:flex-row justify-evenly"> 
+            <div class="gambar px-10 lg:p-0 lg:w-1/4 flex justify-center mt-2 lg:hidden" data-aos="fade" data-aos-duration="1000">
+                <div class="gambar">
+                    <img src="./img/motif.png" alt="gambar" class="rounded-lg m-auto">
+                </div>
+            </div>
+            <div class="w-full lg:w-2/4 my-auto mt-8 lg:mt-0" data-aos="fade" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-slate-800 mb-5">Apa itu karawo?</h2>
+                <p class="text-lg text-slate-700 leading-relaxed">
+                    Karawo adalah kain tradisional khas Gorontalo. Karawo itu sendiri berasal dari Bahasa Gorontalo yang artinya sulaman dengan tangan Jadi Karawo adalah hasil kerajinan tangan. Orang-orang di luar Gorontalo mengenalnya dengan sebutan Kerawang
+                </p>
+            </div>
+            <div class="gambar px-10 lg:p-0 lg:w-1/4 flex justify-center mt-2 hidden lg:inline" data-aos="fade" data-aos-duration="1000">
+                <div class="gambar">
+                    <img src="./img/motif.png" alt="gambar" class="rounded-lg m-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Apa itu Karawo Sections End -->
+
     <!-- Product Section -->
     <section id="produk" class="mx-auto py-20 w-full border-b-[1px] p-5">
         <div class="max-w-screen-lg mx-auto">
@@ -116,7 +139,7 @@
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
                     <img src="admin/upload/<?php echo $data['gambar'];?>" alt="Artikel 1" class="w-full object-cover">
                     <div class="p-4">
-                        <p class="text-gray-700 mb-4">Deskripsi singkat tentang gallery</p>
+                        <p class="text-gray-700 mb-4"><?= $data['nama_galeri'];?></p>
                     </div>
                 </div>
                 <?php } ?>
@@ -227,7 +250,7 @@
                 </div>
                 <!-- Card 6 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-1/5 mx-1 mb-4" data-aos="fade" data-aos-duration="1000">
-                    <img src="img/team/agung.png" alt="Tim 5" class="w-full object-cover">
+                    <img src="img/team/5.jpg" alt="Tim 5" class="w-full object-cover">
                     <div class="p-4">
                         <h3 class="text-xl font-bold mb-2">Anggota Tim 4</h3>
                         <p class="text-gray-700 p-1">Muhammad Agung Gawa</p>

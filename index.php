@@ -13,9 +13,9 @@ include "lib/config.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toluka</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image" href="./img/toluka.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -41,13 +41,14 @@ include "lib/config.php";
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
-            <nav id="navbar-default" class="hidden md:flex md:space-x-6">
+            <nav id="navbar-default" class="hidden md:flex md:space-x-3">
                 <a href="#" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Beranda</a>
                 <a href="#about-us" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Tentang
                     Kami</a>
                 <a href="#produk" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Produk
-                    Toluka</a>
+                    Kami</a>
                 <a href="#event" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Event</a>
+                <a href="#galeri" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Galery</a>
                 <a href="#our-team" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Tim Kami</a>
                 <a href="#our-contact" class="px-4 py-2 text-slate-700 rounded-lg transition hover:underline">Kontak
                     Kami</a>
@@ -74,8 +75,7 @@ include "lib/config.php";
     <!-- Hero Section -->
     <?php 
             if ($_GET['module']=='home') {
-                include "module/toluka.php";
-                
+                include "module/toluka.php";    
             }else if ($_GET['module']=='detail_event') {
                 include "module/detail_event.php";
             }else{
