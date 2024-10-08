@@ -28,8 +28,8 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Data Galeri Sekolah</h4>
-                    <h6 class="card-subtitle">Berisi data galeri dari SMP 1 Toboali</h6>
+                    <h4 class="card-title">Data Galeri Toluka</h4>
+                    <h6 class="card-subtitle">Berisi data galeri Tooluka</h6>
                     <div class="table-responsive m-t-40">
                         <table id="myTable" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                             <thead>
@@ -49,7 +49,7 @@
                                 <tr>
                                     <td><?php echo $no; ?></td>
                                     <td><?php echo $data['nama_galeri']; ?></td>
-                                    <td><img src="upload/<?php echo $data['gambar']; ?>" width="100px"  height="100px" alt="<?php echo $data['gambar']; ?>"/></td>
+                                    <td><img src="upload/<?php echo $data['gambar']; ?>" width="150px"  height="100px" alt="<?php echo $data['gambar']; ?>"/></td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="adminweb.php?module=edit_galeri&kd_galeri=<?php echo $data['id_galeri']; ?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>

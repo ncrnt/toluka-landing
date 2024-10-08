@@ -121,7 +121,7 @@ session_start();
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <aside class="left-sidebar">
+        <aside class="left-sidebar bg-">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
                 <!-- Sidebar navigation-->
@@ -130,10 +130,11 @@ session_start();
                         <li class="user-pro"> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><img src="assets/images/users/admin.png" alt="user-img" class="img-circle"><span class="hide-menu"><?php echo $pecah['nama']; ?></span></a>
                         </li>
                         <li class="nav-small-cap ml-3"> Master</li>
-                        <li> <a class="waves-effect waves-dark" href="adminweb.php?module=home"><i class="icon-speedometer"></i><span class="hide-menu">Home</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="adminweb.php?module=profil"><i class="fa  fa-home"></i><span class="hide-menu">Profil Toluka</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="adminweb.php?module=home"><i class="fa fa-home"></i><span class="hide-menu">Home</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="adminweb.php?module=profil"><i class="fa  fa-info-circle"></i><span class="hide-menu">Profil Toluka</span></a></li>
                         <li> <a class="waves-effect waves-dark" href="adminweb.php?module=produk"><i class="fa fa-shopping-cart"></i><span class="hide-menu">Produk</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="adminweb.php?module=event"><i class="fa fa-inbox"></i><span class="hide-menu">Event</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="adminweb.php?module=event"><i class="fa fa-newspaper-o"></i><span class="hide-menu">Event</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="adminweb.php?module=galeri"><i class="fa fa-file-image-o"></i><span class="hide-menu">Galery</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -164,12 +165,19 @@ session_start();
                 }else if($_GET['module']=='edit_event'){
                     include("module/event/form_edit.php");
 
-                }else if($_GET['module']=='produk'){ //prestasi
+                }else if($_GET['module']=='produk'){ //produk
                     include("module/produk/index.php");
                 }else if($_GET['module']=='tambah_produk'){
                     include("module/produk/form_tambah.php");
                 }else if($_GET['module']=='edit_produk'){
                     include("module/produk/form_edit.php");
+
+                }else if($_GET['module']=='galeri'){ //galery
+                    include("module/galeri/index.php");
+                }else if($_GET['module']=='tambah_galeri'){
+                    include("module/galeri/form_tambah.php");
+                }else if($_GET['module']=='edit_galeri'){
+                    include("module/galeri/form_edit.php");
                 }else{
                     include("module/home/index.php");
                 }

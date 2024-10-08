@@ -28,7 +28,7 @@
         <div class="col-12">
             <div class="card card-body">
                 <h3 class="box-title m-b-0">Form Tambah Galeri</h3>
-                <p class="text-muted m-b-30 font-13"> Digunakan untuk menambahkan data galeri sekolah </p>
+                <p class="text-muted m-b-30 font-13"> Digunakan untuk menambahkan data </p>
                 <div class="row">
                     <div class="col-sm-12 col-xs-12">
                         <form action="module/galeri/aksi_tambah.php" method="POST" enctype="multipart/form-data">                            

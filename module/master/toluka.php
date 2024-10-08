@@ -98,6 +98,31 @@
             </div>
         </div>
     </section>
+
+       <!-- Galeri Section -->
+       <section id="galeri" class="mx-auto py-20 w-full text-center border-b-[1px] p-5" data-aos="fade" data-aos-duration="1000">
+        <div class="max-w-screen-lg mx-auto">
+            <h2 class="text-3xl font-bold text-slate-800 mb-5">Galeri</h2> 
+            <p class="text-lg text-slate-800 leading-relaxed mb-8">
+                Jelajahi proses pembuatan produk kami dengan berbagai macam aneka ragam
+            </p>   
+            <!-- Article Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Article Card 1 -->
+                <?php 
+                    $query = mysqli_query($koneksi,"SELECT * FROM galeri");
+                    while ($data=mysqli_fetch_array($query)) {
+             ?>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="admin/upload/<?php echo $data['gambar'];?>" alt="Artikel 1" class="w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 mb-4">Deskripsi singkat tentang gallery</p>
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+        </div>
+    </section>
     
 
     <!-- Our Team Section -->
@@ -107,10 +132,10 @@
             <div class="flex flex-wrap justify-center -mx-1">
                 <!-- Card 1 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-1/5 mx-1 mb-4" data-aos="fade" data-aos-duration="1000">
-                    <img src="img/team/aryo.png" alt="Tim 1" class="w-full object-cover">
+                    <img src="img/team/1.jpg" alt="Tim 1" class="w-full object-cover">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Ketua Tim</h3>
-                        <p class="text-gray-700 p-1">Yusuf Caesararyo S Ibrahim.</p>
+                        <h3 class="text-xl font-bold mb-2">Pembimbing</h3>
+                        <p class="text-gray-700 p-1">Eka Vickraien Dangkua M.Kom</p>
                         <div class="flex justify-center space-x-4 mt-2">
                             <a href="#" class="text-gray-700 hover:text-gray-900">
                                 <i class="fab fa-facebook"></i>
@@ -126,10 +151,10 @@
                 </div>
                 <!-- Card 2 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-1/5 mx-1 mb-4" data-aos="fade" data-aos-duration="1000">
-                    <img src="img/team/pakeka.png" alt="Tim 2" class="w-full object-cover">
+                    <img src="img/team/2.jpg" alt="Tim 2" class="w-full object-cover">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Pembimbing</h3>
-                        <p class="text-gray-700 p-1">Eka Vickraien Dangkua M.Kom</p>
+                        <h3 class="text-xl font-bold mb-2">Ketua Tim</h3>
+                        <p class="text-gray-700 p-1">Yusuf Caesararyo S Ibrahim.</p>
                         <div class="flex justify-center space-x-4 mt-2">
                             <a href="#" class="text-gray-700 hover:text-gray-900">
                                 <i class="fab fa-facebook"></i>
@@ -164,7 +189,7 @@
                 </div>
                 <!-- Card 4 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-1/5 mx-1 mb-4" data-aos="fade" data-aos-duration="1000">
-                    <img src="img/team/zul.png" alt="Tim 4" class="w-full object-cover">
+                    <img src="img/team/3.jpg" alt="Tim 4" class="w-full object-cover">
                     <div class="p-4">
                         <h3 class="text-xl font-bold mb-2">Anggota Tim 2</h3>
                         <p class="text-gray-700 p-1">Zulkarnain Huntu</p>
@@ -183,7 +208,7 @@
                 </div>
                 <!-- Card 5 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-1/5 mx-1 mb-4" data-aos="fade" data-aos-duration="1000">
-                    <img src="img/team/gita.png" alt="Tim 5" class="w-full object-cover">
+                    <img src="img/team/4.jpg" alt="Tim 5" class="w-full object-cover">
                     <div class="p-4">
                         <h3 class="text-xl font-bold mb-2">Anggota Tim 3</h3>
                         <p class="text-gray-700 p-1">Regita Cahyani Majid</p>
@@ -231,7 +256,7 @@
                 Hubungi kami untuk informasi lebih lanjut mengenai produk dan event kami.
             </p>
             <div class="flex justify-center space-x-6 mt-8">
-                <a href="#" class="hover:text-gray-200 text-slate-800 text-3xl">
+                <a href="https://www.facebook.com/profile.php?id=61557032645662" class="hover:text-gray-200 text-slate-800 text-3xl">
                     <i class="fab fa-facebook"></i>
                 </a>
                 <a href="https://instagram.com/_toluka" target="_blank"

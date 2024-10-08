@@ -12,3 +12,25 @@ while ($data=mysqli_fetch_array($query)) {
         </p>
     </section>
 <?php }?>
+
+<!-- Contact Section -->
+<section id="our-contact" class="mx-auto py-20 bg-[#ffb53e] w-full text-center">
+        <div class="max-w-screen-lg mx-auto" data-aos="fade" data-aos-duration="1000">
+            <h2 class="text-3xl font-bold text-slate-800 mb-5">Kontak Kami</h2>
+            <p class="text-lg text-slate-800 leading-relaxed">
+                Hubungi kami untuk informasi lebih lanjut mengenai produk dan event kami.
+            </p>
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="https://www.facebook.com/profile.php?id=61557032645662" class="hover:text-gray-200 text-slate-800 text-3xl">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/_toluka" target="_blank"
+                    class="hover:text-gray-200 text-slate-800 text-3xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/628" target="_blank" class="hover:text-gray-200 text-slate-800 text-3xl">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>

@@ -23,7 +23,7 @@
  	print_r($ubah);
  	if (isset($_POST['ubah_foto'])) {
  		if ($foto_type =='image/jpg' OR $foto_type =='image/png' OR $foto_type =='image/jpeg') {
-	 		if ($foto_size < 1024000 ) {
+	 		if ($foto_size < 5024000 ) {
 			    move_uploaded_file($foto_temp, $folder . $foto);
 			    $queryEdit= mysqli_query($koneksi,"UPDATE galeri SET nama_galeri='$nama', gambar='$foto' WHERE id_galeri='$id'");
 			 	if($queryEdit){
