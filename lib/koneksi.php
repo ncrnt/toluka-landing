@@ -3,6 +3,6 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$database = "akademik_psb";
+$database = "toluka";
 //membuat koneksi
 $koneksi = mysqli_connect($server,$username,$password, $database);
