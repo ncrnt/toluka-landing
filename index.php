@@ -74,13 +74,13 @@ include "lib/config.php";
     <!-- Hero Section -->
     <?php 
             if ($_GET['module']=='home') {
-                include "module/master/toluka.php";
+                include "module/toluka.php";
                 
             }else if ($_GET['module']=='detail_event') {
-                include "module/master/detail_event.php";
+                include "module/detail_event.php";
             }else{
                 echo "<script>window.location='$base_url'+'index.php?module=home';</script>";
-                include "module/master/toluka.php";
+                include "module/toluka.php";
             }
          ?>
 
